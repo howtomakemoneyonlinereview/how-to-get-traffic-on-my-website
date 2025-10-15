@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACH OVER 40,000 BUYERS DAILY | Limited Time Offer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .pricing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 15px 0;
+        }
+        
+        .old-price {
+            font-size: 24px;
+            text-decoration: line-through;
+            color: #ccc;
+        }
+        
+        .sale-price {
+            font-size: 42px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .sale-badge {
+            background: #ff3333;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .countdown {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        
+        .countdown-highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin: 15px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        h2 {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #ffcc00;
+        }
+        
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .benefits {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 25px;
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .benefits-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .benefits ul {
+            list-style-type: none;
+        }
+        
+        .benefits li {
+            padding: 8px 0;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .benefits li:before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .email-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 25px;
+            min-width: 300px;
+            flex: 0 0 300px;
+        }
+        
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .email-form input {
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        
+        .email-form button {
+            background: linear-gradient(to right, #00b09b, #96c93d);
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .email-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, #ff8a00, #da1b60);
+            color: white;
+            padding: 18px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 15px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+        
+        .secondary-button {
+            display: inline-block;
+            background: linear-gradient(to right, #00b09b, #96c93d);
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .secondary-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+        
+        .guarantee {
+            text-align: center;
+            font-style: italic;
+            margin: 15px 0;
+            opacity: 0.9;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            opacity: 0.7;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            .sale-price {
+                font-size: 32px;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 20px;
+            }
+            
+            .benefits-columns {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-section {
+                flex-direction: column;
+            }
+            
+            .email-section {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="pricing">
+                <span class="old-price">$197.00</span>
+                <span class="sale-price">$5.00</span>
+                <span class="sale-badge">SALE</span>
+            </div>
+            
+            <div class="countdown">
+                <p>Offer ends at <span class="countdown-highlight">Midnight!</span></p>
+            </div>
+            
+            <h1>HOW WOULD YOU LIKE TO REACH...</h1>
+            <h2>OVER 40,000 BUYERS EVERY DAY?</h2>
+            <p>THE ULTIMATE OPPORTUNITY TO REACH 40K BUYERS</p>
+        </header>
+        
+        <div class="content-section">
+            <section class="benefits">
+                <div class="benefits-columns">
+                    <ul>
+                        <li>Your URL mailed to OVER 40k Members DAILY</li>
+                        <li>Sent Out DAILY to all 25 of my MMO websites & MORE</li>
+                        <li>Sent Out DAILY to all who buy this product</li>
+                        <li>Submit any URL in any niche</li>
+                        <li>Sent Out WEEKLY to my MAIN EMAIL LIST</li>
+                    </ul>
+                    <ul>
+                        <li>Crazy value for under $10</li>
+                        <li>Absolutely NO Bot Traffic Clicks</li>
+                        <li>This Package NEVER OFFERED BEFORE</li>
+                        <li>Includes 1000's of proven buyers</li>
+                        <li>Free squeeze pages included</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="email-section">
+                <h3>Want More Offers Like This?</h3>
+                <p>Subscribe to get notified about future deals!</p>
+                <form class="email-form" method="post" action="https://www.sendsteed.com/subscribe/">
+                    <input name="e115811" required type="text" placeholder="your@email.com">
+                    <input name="n115811" required type="text" placeholder="Your Name">
+                    <input type="hidden" name="lllid" value="115811">
+                    <input type="hidden" name="lluid" value="sandyarta">
+                    <input type="hidden" name="redirect" value="">
+                    <input type="hidden" name="source" value="">
+                    <button type="submit">Subscribe for More Offers</button>
+                </form>
+            </section>
+        </div>
+        
+        <section class="cta-section">
+            <a href="https://warriorplus.com/o2/a/xl1s0xk/0/landingneu" class="cta-button">
+                BUY NOW & REACH BUYERS
+            </a>
+            <br>
+            <a href="#" class="secondary-button">
+                SEND YOUR LINK TO BUYERS HERE
+            </a>
+            
+            <p class="guarantee">Limited Time Offer - Only $5.00 Today!</p>
+        </section>
+        
+        <footer>
+            <p>© 2023 Traffic Booster. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
